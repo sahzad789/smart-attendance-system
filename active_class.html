@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Active Class</title>
+</head>
+<body>
+
+<h1>Attendance System Working ✅</h1>
+
+<p>Today: {{ current_day }}</p>
+<p>Time: {{ current_time }}</p>
+
+{% if active_class %}
+    <h2>Subject: {{ active_class.subject }}</h2>
+    <p>{{ active_class.start_time }} - {{ active_class.end_time }}</p>
+{% else %}
+    <h2>No Active Class Right Now</h2>
+{% endif %}
+
+</body>
+</html>
